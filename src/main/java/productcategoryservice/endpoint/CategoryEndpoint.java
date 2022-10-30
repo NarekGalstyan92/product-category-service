@@ -34,7 +34,6 @@ public class CategoryEndpoint {
     public ResponseEntity<Category> deleteCategoryByID(@PathVariable("id") int id) {
         categoryService.deleteCategoryById(id);
         return ResponseEntity.notFound().build();
-
     }
 
     @PutMapping("/categories")

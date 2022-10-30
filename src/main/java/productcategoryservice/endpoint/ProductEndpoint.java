@@ -36,7 +36,6 @@ public class ProductEndpoint {
     public ResponseEntity<Product> deleteProductByID(@PathVariable("id") int id) {
         productService.deleteProductById(id);
         return ResponseEntity.notFound().build();
-
     }
 
     @PutMapping("/products")

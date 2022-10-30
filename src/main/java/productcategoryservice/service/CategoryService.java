@@ -13,7 +13,6 @@ import java.util.Optional;
 public class CategoryService {
 
     private final CategoryRepository categoryRepository;
-
     public List<Category> categoryList() {
         return categoryRepository.findAll();
     }
